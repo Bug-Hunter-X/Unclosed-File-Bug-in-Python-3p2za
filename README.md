@@ -1,0 +1,3 @@
+This repository demonstrates a common, yet easily missed, bug in Python: failing to close a file opened with the `open()` function.  The `bug.py` file shows the erroneous code, and `bugSolution.py` shows the corrected version.  Unclosed files can lead to resource leaks and data corruption, especially when handling exceptions.
+
+Ensure you always close files using a `finally` block or context manager (`with open(...) as f`) for robust error handling.
